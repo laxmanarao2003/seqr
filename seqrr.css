@@ -1,0 +1,179 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root
+{
+    --primary:white;
+    --secondary:black;
+}
+.navbar-brand span,.navbar-brand
+{
+    letter-spacing: 1px;
+    font-size:110%;
+}
+.navbar-nav li a
+{
+    letter-spacing: 1px;
+}
+#learn_txt
+{
+    font-weight:500;
+    -webkit-text-stroke:1px;
+    -webkit-text-stroke-color: whitesmoke;
+    -webkit-text-fill-color: whitesmoke;
+}
+#start_txt
+{
+    font-weight: 500;
+    color: rgba(255, 77, 0, 0.897);
+}
+.bg_clr
+{
+    background-image: url('https://cdn.cbeditz.com/cbeditz/large/116144210481jxj3qip3lbnq6azoksnchx8d3yfehabm3nk19fpx4ll4nxp52g5ukyyko6lrdgtyvk5z7hwxwg5lsx3cwu1ft3wxaogk8pv4vpx.jpg');
+    min-height: 800px;
+}
+input[type="search"]
+{
+    letter-spacing: 1px;
+    caret-color: rgb(249, 7, 55);
+}
+p.first_yr,p.second_yr
+{
+    font-weight: 600;
+    color: var(--primary);
+}
+p.third_yr
+{
+    font-weight: 600;
+    color: white;
+}
+#firstyear p,#firstyear i
+{
+    color: var(--secondary);
+} 
+#firstyr_info a
+{
+    color: var(--secondary);
+    font-size: large;
+}
+#secondyear p,#secondyear i
+{
+    color: var(--secondary);
+}
+#secondyr_info a,#secondyr_info .fa-graduation-cap
+{
+    color: var(--secondary);
+    font-size: large;
+}
+#thirdyr_info a,#thirdyr_info .fa-graduation-cap
+{
+    color: white;
+    font-size: large;
+}
+#firstyear
+{
+    background-color: rgba(97, 186, 91, 0.265);
+}
+#secondyear
+{
+    background-color: rgba(15, 237, 237, 0.731);
+}
+#thirdyear
+{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.795);
+}
+/********************* secondyear css *********************/ 
+.txt1
+{
+    width:120px;
+    height: 3px;
+    margin-top: -2px;
+    margin-left: 45px;
+    background-color: crimson;
+}
+.txt2
+{
+    width:50px;
+    margin-left: 45px;
+    margin-top: -9px;
+    height: 3px;
+    background-color: crimson;
+}
+.secondyr_ref_ol li a:visited
+{
+    text-decoration: underline;
+    font-size: medium;
+}
+.secondyr_ref_ol li a:hover
+{
+    color:crimson;
+}
+.secondyr_ref_ol li a:active
+{
+    color: chartreuse;
+}
+.secondyr_ref li
+{
+    margin-bottom: 15px;
+}
+.txt3
+{
+    width:120px;
+    height: 3px;
+    margin-top: -15px;
+    margin-left: 1px;
+    background-color: crimson;
+}
+.txt4
+{
+    width:50px;
+    margin-left: 1px;
+    margin-top: -7px;
+    height: 3px;
+    background-color: crimson;
+}
+.txt5
+{
+    width:120px;
+    height: 3px;
+    margin-top: -15px;
+    margin-left: 1px;
+    background-color: crimson;
+}
+.txt6
+{
+    width:50px;
+    margin-left: 1px;
+    margin-top: -7px;
+    height: 3px;
+    background-color: crimson;
+}
+#ltr_spacing h5,#ltr_spacing a
+{
+    letter-spacing: 0.7px;
+}
+#second_year_txt h3
+{
+    letter-spacing:1px;
+}
+/************************** Form submit ****************************/
+.line1
+{
+    width:120px;
+    height: 3px;
+    margin-top: -1px;
+    margin-left: 1px;
+    background-color: crimson;
+}
+.line2
+{
+    width:45px;
+    margin-left: 1px;
+    margin-top: -7px;
+    height: 3px;
+    background-color: crimson;
+}
