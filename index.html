@@ -37,6 +37,16 @@
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script async src="https://api.countapi.xyz/hit/SeQrr.com/3f9623e1-2cc5-4d3d-bd4f-949c25728fd2?callback=websiteVisits"></script>
         <script>
+        window.addEventListener("offline",()=>{
+            alert("You are Offline now \n Please Check your internet connection.!");
+        });
+        window.addEventListener("online",()=>{
+            alert("Yeah! you are on online now.");
+        });
+        setTimeout("complement()",15000);
+        var complement=()=>{
+            alert("Thank you for Visiting my Website,and Keep Watching");
+        }
         var tolower=()=>{
             let txt=document.getElementById("search").value;
             document.getElementById("search").value=txt.toLowerCase();
