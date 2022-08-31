@@ -35,15 +35,14 @@
 
         <!------------------------ BOOTSTRAP-JQuery-CDN -------------------------->
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+        <!---------------------- API for How many times does a user visit --------------------->
         <script async src="https://api.countapi.xyz/hit/SeQrr.com/3f9623e1-2cc5-4d3d-bd4f-949c25728fd2?callback=websiteVisits"></script>
         <script>
         window.addEventListener("offline",()=>{
             alert("You are Offline now \n Please Check your Internet connection.!");
         });
-        window.addEventListener("online",()=>{
-            alert("Yeah! You are on Online now.");
-        });
-        setTimeout("complement()",20000);
+        setTimeout("complement()",30000);
         var complement=()=>{
             alert("Thank You for Visiting my Website , and Keep Watching");
         }
@@ -56,18 +55,28 @@
             let searchbtn=document.getElementById("searchbtn");
             if(txt=="first year" || txt=="firstyear")
             {
-                txt.value=" ";
                 searchbtn.setAttribute("href",".\\firstyear.html");
+                txt=" ";
             }
             else if(txt=="secondyear" || txt=="second year")
             {
-                txt.value=" ";
+                txt=" ";
                 searchbtn.setAttribute("href",".\\secondyear.html");
             }
             else if(txt=="third year" || txt=="thirdyear")
             {
-                txt.value=" ";
                 searchbtn.setAttribute("href",".\\thirdyear.html");
+                txt=" ";
+            }
+            else if(txt=="privacy" || txt=="privacy policy")
+            {
+                searchbtn.setAttribute("href",".\\privacy.html");
+                txt=" ";
+            }
+            else if(txt=="report" || txt=="report ")
+            {
+                searchbtn.setAttribute("href",".\\formsubmit.html");
+                txt=" ";
             }
             else
             {
@@ -113,6 +122,7 @@
                         </ul>
                     </li>
                     <li class="nav-item"><a href=".\formsubmit.html" target="_blank" class="nav-link text-light me-4">Report</a></li>
+                    <li class="nav-item"><a href=".\privacy.html" target="_blank" class="nav-link text-light me-4">Privacy</a></li>
                 </ul>
             </div>
         </div>
@@ -196,9 +206,8 @@
             <a href="https://www.facebook.com/laxmanarao2003" target="_blank" class="btn btn-outline-light btn-floating me-2" title="Faceboook" id="fb" data-bs-placement="top"><i class="fa-brands fa-facebook"></i></a>
             <a href="https://twitter.com/laxmanarao2003"class="btn btn-outline-light btn-floating"target="_blank" title="Twitter" id="twitter" data-bs-placement="right"><i class="fa-brands fa-twitter-square"></i></a>
         </div>
-        <div class="bg-dark text-center pt-3 pb-2"> 
+        <div class="bg-dark text-center pt-3 pb-2">
             <a href="#" id="copyright" style="letter-spacing:1px;" class="text-center text-light text-decoration-none"> &copy; 2022 Copyright: Lucky@SearchDeep</a>
-            <a href=".\privacy.html" class="text-decoration-none">Privacy policy</a>
         </div>
     </div>
 </footer>
