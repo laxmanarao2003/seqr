@@ -43,9 +43,9 @@
         window.addEventListener("online",()=>{
             alert("Yeah! You are on Online now.");
         });
-        setTimeout("complement()",15000);
+        setTimeout("complement()",20000);
         var complement=()=>{
-            alert("Thank you for Visiting my Website,and Keep Watching");
+            alert("Thank You for Visiting my Website , and Keep Watching");
         }
         var tolower=()=>{
             let txt=document.getElementById("search").value;
@@ -75,8 +75,9 @@
                 searchbtn.href="#";
             }
         }
+        /***************** How many times user visits *******************/
         function websiteVisits(response)
-        { 
+        {
             let counter=document.getElementById("counter");
             counter.innerHTML=response.value;
         }
@@ -96,11 +97,11 @@
                     <li class="nav-item dropdown"><a href="#" class="nav-link text-light me-4 dropdown-toggle" title="select valid year" data-bs-toggle="dropdown">Academic</a>
                         <ul class="dropdown-menu">
                             <p class="dropdown-header">First Year</p>
-                            <li class=""><a href=".\firstyear.html" class="dropdown-item">1st-year</a></li>
+                            <li class=""><a href=".\firstyear.html" target="_blank" class="dropdown-item">1st-year</a></li>
                             <p class="dropdown-header">Second Year</p>
-                            <li class=""><a href=".\secondyear.html" target="_self" class="dropdown-item">2nd-year</a></li>
+                            <li class=""><a href=".\secondyear.html" target="_blank" class="dropdown-item">2nd-year</a></li>
                             <p class="dropdown-header">Third Year</p>
-                            <li class=""><a href=".\thirdyear.html" class="dropdown-item">3rd-year</a></li>
+                            <li class=""><a href=".\thirdyear.html" target="_blank" class="dropdown-item">3rd-year</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown"><a href="#" class="nav-link text-light me-4 dropdown-toggle" data-bs-toggle="dropdown">More</a>
@@ -111,7 +112,7 @@
                             <li><a href="https://laxmanaraoarsavilli.github.io/Quizz/" target="_blank" class="dropdown-item">Quizz</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a href=".\formsubmit.html" target="_self" class="nav-link text-light me-4">Report</a></li>
+                    <li class="nav-item"><a href=".\formsubmit.html" target="_blank" class="nav-link text-light me-4">Report</a></li>
                 </ul>
             </div>
         </div>
@@ -128,7 +129,7 @@
             </div>
             <div class="input-group mt-4 col-lg-12">
                 <input type="search" id="search" onchange="tolower()" class="form-control rounded-pill me-1 ps-3" placeholder="Search Here...!" title="search here in a valid format" autocomplete="on">
-                <a href=".\secondyear.html" onclick="sbt()" target="_self" id="searchbtn" class="btn btn-dark bg-success rounded" title="click to search"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href=".\secondyear.html" onclick="sbt()"target="_blank" id="searchbtn" class="btn btn-dark bg-success rounded" title="click to search"><i class="fa-solid fa-magnifying-glass"></i></a>
             </div>
         </div>
     </div>
@@ -142,8 +143,8 @@
                         <p class="first_yr text-center">First Year</p>
                     </div>
                     <div style="display:inline-block;" class="mt-4 btn-group-vertical d-flex justify-content-center" id="firstyr_info">
-                        <a href=".\firstyear.html" class="btn btn-success px-3 py-2 mb-4" title="visit to learn">Learn<i class="fa-solid fa-graduation-cap ps-3"></i></a>
-                        <a href=".\firstyear.html" class="btn btn-warning px-3 py-2 mt-2" title="Download to learn">Download<i class="fa-solid fa-download ps-3"></i></a>
+                        <a href=".\firstyear.html" target="_blank" class="btn btn-success px-3 py-2 mb-4" title="visit to learn">Learn<i class="fa-solid fa-graduation-cap ps-3"></i></a>
+                        <a href=".\firstyear.html" target="_blank" class="btn btn-warning px-3 py-2 mt-2" title="Download to learn">Download<i class="fa-solid fa-download ps-3"></i></a>
                     </div>
                 </div>
             </div>
@@ -156,8 +157,8 @@
                     <p class="second_yr text-center">Second Year</p>
                 </div>
                 <div style="display:inline-block;" class="mt-4 btn-group-vertical d-flex justify-content-center" id="secondyr_info">
-                    <a href=".\secondyear.html" target="_self" class="btn btn-success px-3 py-2 mb-4" title="visit to learn">Learn<i class="fa-solid fa-graduation-cap ps-3"></i></a>
-                    <a href=".\secondyear.html" target="_self" class="btn btn-warning px-3 py-2 mt-2" title="visit to learn">Download<i class="fa-solid fa-download ps-3"></i></a>
+                    <a href=".\secondyear.html" target="_blank" class="btn btn-success px-3 py-2 mb-4" title="visit to learn">Learn<i class="fa-solid fa-graduation-cap ps-3"></i></a>
+                    <a href=".\secondyear.html" target="_blank" class="btn btn-warning px-3 py-2 mt-2" title="visit to learn">Download<i class="fa-solid fa-download ps-3"></i></a>
                 </div>
             </div>
         </div>
@@ -169,16 +170,16 @@
                     <p class="third_yr text-center">Third Year</p>
                 </div>
                 <div style="display:inline-block;" class="mt-4 btn-group-vertical d-flex justify-content-center" id="thirdyr_info">
-                    <a href=".\thirdyear.html" class="btn btn-success px-3 py-2 mb-4" title="visit to learn">Learn<i class="fa-solid fa-graduation-cap ps-3"></i></a>
-                    <a href=".\thirdyear.html" class="btn btn-warning px-3 py-2 mt-2" title="Download to learn">Download<i class="fa-solid fa-download ps-3"></i></a>
+                    <a href=".\thirdyear.html" target="_blank" class="btn btn-success px-3 py-2 mb-4" title="visit to learn">Learn<i class="fa-solid fa-graduation-cap ps-3"></i></a>
+                    <a href=".\thirdyear.html" target="_blank" class="btn btn-warning px-3 py-2 mt-2" title="Download to learn">Download<i class="fa-solid fa-download ps-3"></i></a>
                 </div>
             </div>
         </div>
     </div>
 <div class="bg-warning text-center">
     <div class="pt-5 pb-5">
-        <h3 class="pt-5">This page was viewed<i class="fa-solid fa-eye ps-2"></i></h3>
-        <h1 id="counter" class="pt-1 pb-1">0</h1>
+        <h2 class="pt-5">This page was viewed<i class="fa-solid fa-eye ps-2"></i></h2>
+        <h1 id="counter" class="text-danger pt-1 pb-1">0</h1>
         <h3 class="pb-5">Times</h1>
     </div>
 </div>
@@ -197,6 +198,7 @@
         </div>
         <div class="bg-dark text-center pt-3 pb-2"> 
             <a href="#" id="copyright" style="letter-spacing:1px;" class="text-center text-light text-decoration-none"> &copy; 2022 Copyright: Lucky@SearchDeep</a>
+            <a href=".\privacy.html" class="text-decoration-none">Privacy policy</a>
         </div>
     </div>
 </footer>
