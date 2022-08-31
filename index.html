@@ -35,7 +35,8 @@
 
         <!------------------------ BOOTSTRAP-JQuery-CDN -------------------------->
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script>
+        <script async src="https://api.countapi.xyz/hit/SeQrr.com/3f9623e1-2cc5-4d3d-bd4f-949c25728fd2?callback=websiteVisits"></script>
+        <script>
         var tolower=()=>{
             let txt=document.getElementById("search").value;
             document.getElementById("search").value=txt.toLowerCase();
@@ -63,6 +64,11 @@
                 alert("Search in correct format");
                 searchbtn.href="#";
             }
+        }
+        function websiteVisits(response)
+        { 
+            let counter=document.getElementById("counter");
+            counter.innerHTML=response.value;
         }
     </script>
     </head>
@@ -159,14 +165,20 @@
             </div>
         </div>
     </div>
-
+<div class="bg-warning text-center">
+    <div class="pt-5 pb-5">
+        <h3 class="pt-5">This page was viewed</h3>
+        <h1 id="counter" class="pt-1 pb-1">0</h1>
+        <h3 class="pb-5">Times</h1>
+    </div>
+</div>
 <!-------------------------------- Section End --------------------------->
 
  <!---------------------------------------- Footer section----------------------------------------->
 <footer class="mb-auto" style="padding-top:1px;">
     <div class="bg-dark text-center text-light mh-auto mb-auto pt-3 pb-3">
         <h4 class="text-center pt-3" style="letter-spacing:1px;">Contact me: <span class="text-primary">Lucky</span></h4>
-        <div class="pt-2 pb-2">
+        <div class="pt-3 pb-2">
             <a href="https://github.com/Laxmanaraoarsavilli" class="btn btn-outline-light btn-floating me-2" target="_blank" title="Github" id="github" data-bs-placement="left"><i class="fa-brands fa-github"></i></a>
             <a href="https://web.telegram.org/z/" class="btn btn-outline-light btn-floating me-2" target="_blank" title="Telegram" id="tele" data-bs-placement="top"><i class="fa-brands fa-telegram"></i></a>
             <a href="https://www.instagram.com/laxmanarao_arasavilli/" target="_blank" class="btn btn-outline-light btn-floating me-2" title="Instagram" id="insta" data-bs-placement="top"><i class="fa-brands fa-instagram-square"></i></a>
