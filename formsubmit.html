@@ -55,6 +55,13 @@
                     }).then(message => alert("Message sent successfully")).catch((error)=>{alert("Message sending Error")});
             }
         </script>
+        <script>
+            $(document).ready(function(){
+                $("#info").hover(function(){
+                    $(this).tooltip();
+                });
+            });
+        </script>
     </head>
 <body>
 <div>
@@ -94,9 +101,12 @@
 
 <div class="container d-flex justify-content-center mt-5 mb-5">
     <div class="col-lg-6 col-md-10 col-sm-11 mt-3 mb-5">
-        <h4>Report -</h4>
+        <div class="d-flex flex-row">
+            <h4>Report -</h4>
+            <i class="fa-sharp fa-solid fa-circle-info ps-2 mt-2" title="You can contact me for whatever you want" style="cursor: pointer;" data-bs-placement="right" id="info"></i>
+        </div>
         <p class="line1"></p>
-        <p class="line2"></p>
+        <p class="line2 mb-4"></p>
         <form onsubmit="msgsend();reset();return false" method="post" class="was-validated" name="formvalid">
             <div class="form-floating mb-4">
                 <input type="text" class="form-control" id="Fname" name="fname" placeholder="Enter Your Name" required>
