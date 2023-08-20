@@ -84,6 +84,16 @@
                 searchbtn.href="#";
             }
         }
+        /* hiding navigate to top(HOME Navigator) when scrollTop<320*/
+        window.addEventListener("scroll",()=>{
+            if(document.documentElement.scrollTop>320){
+                $("#up-arrow").css({display:"block"});
+            }
+            else{
+                $("#up-arrow").css({display:"none"});
+            }
+        });
+
         /***************** How many times user visits *******************/
         function websiteVisits(response)
         {
@@ -136,7 +146,7 @@
         </div>
     </div>
     <div class="container" style="z-index: 1;bottom: 16px;right:7px;position: fixed;">
-        <a href="#home" class="btn btn-outline-danger float-end" title="Back to top"><i class="fa-solid fa-circle-arrow-up"></i></a>
+        <a href="#home" class="btn btn-outline-danger float-end" id="up-arrow" title="Back to top" style="display:none"><i class="fa-solid fa-circle-arrow-up"></i></a>
     </div>
     <div style="height:400px;" class="" id="firstyear">
         <div class="container d-flex justify-content-center">
